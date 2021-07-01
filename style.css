@@ -12,19 +12,30 @@ html, body {
     max-width:1170px;
     margin-left:auto;
     margin-right:auto;
-    padding:1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    max-width: 50%;
+    min-width: 25%;
+}
+
+.fields {
+    padding: 0.2em 0 0.2em 0;
+}
+
+label {
+    font: 1em "Fira Sans", sans-serif, bold;
+}
+
+input {
+    width: 100%;
+    min-width: 25%;
 }
 
 .submit {
     list-style-type: none;
-}
-
-.name_field {
-    grid-template-columns: 1;
-}
-
-.address_field {
-    grid-template-columns: 2;
 }
