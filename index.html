@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Leehoes</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<h1>THE LEEHOES ARE THE BEST THAT IS FOR SURE!!!</h1>
-	<form>
-		<label for="address-line1">Address line 1</label>
-		<input type="text" name="address-line1" id="address-line1">
-	</form>
+	<section class="container">
+		<form action="POST" data-netlify="true">
+			<h4 class="form_header">Submit your address here</h4>
+			<div class="fields">
+				<label>Name</label>
+				<div class="name_field">
+					<div class="field">
+						<input type="text" name="first-name]" id="first-name" placeholder="First name">
+					</div>
+					<div class="field">
+						<input type="text" name="last-name" id="last-name" placeholder="Last Name">
+					</div>
+				</div>
+			</div>
+			<div class="fields">
+				<label>Address</label>
+				<div class="address_field">
+					<div>
+						<input type="text" name="address" placeholder="Street Address">
+					</div>
+					<div>
+						<input type="text" name="address-2" placeholder="Apt #">
+					</div>
+				</div>
+			</div>
+			<div class="fields">
+				<div class="state_zip_field">
+					<label>State</label>
+					<div class="fields">
+						<div>
+							<input type="text" name="state" placeholder="State">
+						</div>
+					</div>
+				</div>
+				<div class="fields">
+					<label>ZIP</label>
+					<div class="fields">
+						<div>
+							<input type="text" name="zip" placeholder="ZIP">
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="submit">
+				<li><input type="submit" value="Submit" class="button primary" /></li>
+			</ul>
+		</form>
+	</section>
 </body>
+
 </html>
