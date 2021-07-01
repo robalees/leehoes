@@ -36,6 +36,11 @@ input {
     min-width: 25%;
 }
 
+.recaptcha {
+    width: 50%;
+}
+
 .submit {
     list-style-type: none;
 }
+
