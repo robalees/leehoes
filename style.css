@@ -1,46 +1,71 @@
-*{
+/* glory-regular - latin */
+@font-face {
+  font-family: "Glory";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/glory-v2-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/glory-v2-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* glory-800 - latin */
+@font-face {
+  font-family: "Glory";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/glory-v2-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/glory-v2-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
   box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    background: rgb(249,198,201);
-    background: linear-gradient(45deg, rgba(249,198,201,1) 0%, rgba(250,237,203,1) 100%);
+html,
+body {
+  height: 100%;
+  background: rgb(249, 198, 201);
+  background: linear-gradient(
+    45deg,
+    rgba(249, 198, 201, 1) 0%,
+    rgba(250, 237, 203, 1) 100%
+  );
 }
 
 .container {
-    max-width:1170px;
-    margin-left:auto;
-    margin-right:auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact {
-    max-width: 50%;
-    min-width: 25%;
+  max-width: 50%;
+  min-width: 25%;
 }
 
 .fields {
-    padding: 0.2em 0 0.2em 0;
+  padding: 0.2em 0 0.2em 0;
 }
 
 label {
-    font: 1em "Fira Sans", sans-serif, bold;
+  font: 1em "Glory", sans-serif;
+  font-weight: 400;
 }
 
 input {
-    width: 100%;
-    min-width: 25%;
+  width: 100%;
+  min-width: 25%;
 }
 
 .recaptcha {
-    width: 50%;
+  width: 50%;
 }
 
 .submit {
-    list-style-type: none;
+  list-style-type: none;
 }
-
