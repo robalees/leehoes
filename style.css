@@ -52,6 +52,11 @@ body {
   padding: 0.2em 0 0.2em 0;
 }
 
+.form_header {
+  font: 1.5em "Glory", sans-serif;
+  font-weight: 800;
+}
+
 label {
   font: 1em "Glory", sans-serif;
   font-weight: 400;
