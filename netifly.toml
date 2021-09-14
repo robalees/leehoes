@@ -1,5 +1,5 @@
-[[headers]]
-  for = "/fonts/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Content-Type = "application/font-woff"
+# [[headers]]
+#   for = "/fonts/*"
+#   [headers.values]
+#     Access-Control-Allow-Origin = "*"
+#     Content-Type = "application/font-woff"
