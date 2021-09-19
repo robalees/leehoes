@@ -1,22 +1,6 @@
-/* glory-regular - latin */
 @font-face {
-  font-family: "Glory";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../leehoes/fonts/glory-v2-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../leehoes/fonts/glory-v2-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* glory-800 - latin */
-@font-face {
-  font-family: "Glory";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../leehoes/fonts/glory-v2-latin/glory-v2-latin-800.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../leehoes/fonts/glory-v2-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "1942_report1942_report";
+  src: url("/fonts/1942-webfont.woff") format("woff");
 }
 
 * {
@@ -54,13 +38,13 @@ body {
 }
 
 .form_header {
-  font-family: "Glory", sans-serif;
+  font-family: "1942_report1942_report", Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 800;
 }
 
 label {
-  font-family: "Glory", sans-serif;
+  font-family: "1942_report1942_report", Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
 }
