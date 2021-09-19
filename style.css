@@ -1,6 +1,33 @@
 @font-face {
-  font-family: "1942_report1942_report";
-  src: url("/fonts/1942-webfont.woff") format("woff");
+  font-family: "Reckless";
+  src: url("/fonts/Reckless-Regular.woff") format("woff"),
+    url("/fonts/Reckless-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless";
+  src: url("/fonts/Reckless-RegularItalic.woff") format("woff"),
+    url("/fonts/Reckless-RegularItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Reckless";
+  src: url("/fonts/Reckless-Bold.woff") format("woff"),
+    url("/fonts/Reckless-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless";
+  src: url("/fonts/Reckless-BoldItalic.woff") format("woff"),
+    url("/fonts/Reckless-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
 }
 
 * {
@@ -9,6 +36,7 @@
 
 html,
 body {
+  font-family: "Reckless", Georgia, serif;
   height: 100%;
   background: rgb(249, 198, 201);
   background: linear-gradient(
@@ -38,15 +66,14 @@ body {
 }
 
 .form_header {
-  font-family: "1942_report1942_report", Arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: 800;
+  font-size: 4em;
+  font-weight: bold;
 }
 
 label {
-  font-family: "1942_report1942_report", Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 input {
