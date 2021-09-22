@@ -51,24 +51,28 @@ body {
 
 .text-test {
   display: flex;
+  justify-content: space-around;
 }
 
 .text-test p {
-  font-size: 0.75em;
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+
+.text-test h1 {
+  font-size: 2em;
 }
 
 .georgia {
   font-family: "Georgia", serif;
-  width: 50%;
-  inline-size: 50%;
+  inline-size: 700px;
   overflow-wrap: break-word;
   padding: 10px;
 }
 
 .reckless {
   font-family: "Reckless", serif;
-  width: 50%;
-  inline-size: 50%;
+  inline-size: 700px;
   overflow-wrap: break-word;
   padding: 10px;
 }
