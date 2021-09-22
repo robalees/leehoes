@@ -44,19 +44,58 @@ body {
     rgba(250, 237, 203, 1) 100%
   );
 }
-.text-test {
-  width: auto;
-  position: relative;
-  font-family: "Reckless", serif;
+.main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
-.text-test,
-p {
+.text-test {
+  display: flex;
+}
+
+.text-test p {
+  font-size: 0.75em;
+}
+
+.georgia {
+  font-family: "Georgia", serif;
+  width: 50%;
+  inline-size: 50%;
+  overflow-wrap: break-word;
+  padding: 10px;
+}
+
+.reckless {
+  font-family: "Reckless", serif;
+  width: 50%;
+  inline-size: 50%;
+  overflow-wrap: break-word;
+  padding: 10px;
+}
+
+.normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.bold {
+  font-style: normal;
   font-weight: bold;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .container {
   max-width: 1170px;
+  max-height: 500px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
