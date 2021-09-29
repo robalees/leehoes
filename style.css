@@ -36,7 +36,8 @@
 
 html,
 body {
-  height: 100%;
+  font-family: "Reckless", serif;
+  /* height: 100%; */
   background: rgb(249, 198, 201);
   background: linear-gradient(
     45deg,
@@ -44,73 +45,51 @@ body {
     rgba(250, 237, 203, 1) 100%
   );
 }
-.main {
+.main-container {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "side"
+    "content"
+    "form";
+  grid-template-areas:
+    "header header"
+    "side content"
+    "form form";
 }
 
-.text-test {
-  display: flex;
-  justify-content: space-around;
+.header-container {
+  background-color: red;
+  grid-area: header;
 }
 
-.text-test p {
-  font-size: 1.75em;
-  line-height: 1.25em;
+.side-container {
+  background-color: blue;
+  grid-area: side;
 }
 
-.text-test h1 {
-  font-size: 2em;
+.content-container {
+  background-color: green;
+  grid-area: content;
 }
 
-.georgia {
-  font-family: "Georgia", serif;
-  inline-size: 700px;
-  overflow-wrap: break-word;
-  padding: 10px;
-}
-
-.reckless {
-  font-family: "Reckless", serif;
-  inline-size: 700px;
-  overflow-wrap: break-word;
-  padding: 10px;
-}
-
-.normal {
-  font-style: normal;
-  font-weight: normal;
-}
-
-.italic {
-  font-style: italic;
-  font-weight: normal;
-}
-
-.bold {
-  font-style: normal;
-  font-weight: bold;
-}
-
-.bold-italic {
-  font-weight: bold;
-  font-style: italic;
-}
-
-.container {
-  max-width: 1170px;
+.form-container {
+  background-color: blueviolet;
+  /* max-width: 1170px;
   max-height: 500px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  grid-area: form;
 }
 
 .contact {
-  max-width: 50%;
-  min-width: 25%;
+  /* max-width: 50%;
+  min-width: 25%; */
 }
 
 .fields {
@@ -140,4 +119,14 @@ input {
 
 .submit {
   list-style-type: none;
+}
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "header"
+      "side"
+      "content"
+      "form";
+  }
 }
