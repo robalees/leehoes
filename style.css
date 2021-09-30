@@ -48,11 +48,7 @@ body {
 .main-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "header"
-    "side"
-    "content"
-    "form";
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "header header"
     "side content"
@@ -62,16 +58,22 @@ body {
 .header-container {
   background-color: red;
   grid-area: header;
+  width: 100%;
+  min-width: 25%;
 }
 
 .side-container {
   background-color: blue;
   grid-area: side;
+  width: 100%;
+  min-width: 25%;
 }
 
 .content-container {
   background-color: green;
   grid-area: content;
+  width: 100%;
+  min-width: 25%;
 }
 
 .form-container {
@@ -120,13 +122,14 @@ input {
 .submit {
   list-style-type: none;
 }
-/* @media (min-width: 500px) {
+@media only screen and (max-device-width: 320px) {
   .main-container {
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
     grid-template-areas:
       "header"
       "side"
       "content"
       "form";
   }
-} */
+}
