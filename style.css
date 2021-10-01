@@ -130,11 +130,18 @@ input {
 @media (max-width: 500px) {
   .main-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 125px auto 1fr 1fr 100px;
   }
   .header-container {
     grid-column-start: 1;
     grid-column-end: 2;
+    margin-bottom: 0.5em;
+  }
+  .header-container h1 {
+    font-size: 1.25em;
+  }
+  .header-container h2 {
+    font-size: 0.75em;
   }
   .side-container {
     grid-column-start: 1;
