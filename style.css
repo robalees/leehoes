@@ -134,7 +134,7 @@ body {
 }
 
 .contact {
-  width: 50%;
+  width: 100%;
 }
 
 .form_header {
@@ -144,6 +144,11 @@ body {
   margin: 30px 0 0 0;
   padding-bottom: 15px;
   color: #e87364;
+}
+
+.form-container ul,
+.form-container li {
+  list-style-type: none;
 }
 
 .form-labels {

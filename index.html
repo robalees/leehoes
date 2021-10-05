@@ -32,65 +32,45 @@
 		<section class="form-container">
 			<form class="contact" action="POST" data-netlify="true">
 				<h4 class="form_header">Submit your address here</h4>
-				<div class="fields">
-					<label class="form-labels">Name</label>
-					<div class="name_field">
-						<div class="field">
-							<input type="text" name="first-name" id="first-name" placeholder="First name">
-						</div>
-						<div class="field">
-							<input type="text" name="last-name" id="last-name" placeholder="Last Name">
-						</div>
-					</div>
-				</div>
-				<div class="fields">
-					<label class="form-labels">Email</label>
-					<div class="email_field">
-						<div class="field">
-							<input type="text" name="email_field" id="email_field" placeholder="Email">
-						</div>
-					</div>
-				</div>
-				<div class="fields">
-					<label class="form-labels">Address</label>
-					<div class="address_field">
-						<div>
-							<input type="text" name="address" placeholder="Street Address">
-						</div>
-						<div>
-							<input type="text" name="address-2" placeholder="Apt #">
-						</div>
-					</div>
-					<div class="fields"></div>
+				<ul>
+					<li>
+						<label class="form-labels">Name</label>
+						<input type="text" name="first-name" id="first-name" placeholder="First name">
+					</li>
+					<li>
+						<input type="text" name="last-name" id="last-name" placeholder="Last Name">
+					</li>
+					<li>
+						<label class="form-labels">Email</label>
+						<input type="text" name="email_field" id="email_field" placeholder="Email">
+					</li>
+					<li>
+						<label class="form-labels">Address</label>
+						<input type="text" name="address" placeholder="Street Address">
+					</li>
+					<li>
+						<input type="text" name="address-2" placeholder="Apt #">
+					</li>
+					<li>
 						<label class="form-labels">State (US)/County (UK)</label>
-						<div class="fields">
-							<div>
-								<input type="text" name="state" placeholder="State (US)/County (UK)">
-							</div>
-						</div>
-					</div>
-					<div class="fields">
+						<input type="text" name="state" placeholder="State (US)/County (UK)">
+					</li>
+					<li>
 						<label class="form-labels">ZIP (US)/Postal Code (UK)</label>
-						<div class="fields">
-							<div>
-								<input type="text" name="zip" placeholder="ZIP (US)/Postal Code (UK)">
-							</div>
-						</div>
-					</div>
-					<div class="fields">
+					</li>
+					<li>
+						<input type="text" name="zip" placeholder="ZIP (US)/Postal Code (UK)">
+					</li>
+					<li>
 						<label class="form-labels">Country</label>
-						<div class="fields">
-							<div>
-								<input type="text" name="country" placeholder="Country">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="fields">
-					<div class="recaptcha" data-netlify-recaptcha="true"></div>
-				</div>
-				<ul class="submit">
-					<li><input type="submit" value="Submit" class="button primary" /></li>
+						<input type="text" name="country" placeholder="Country">
+					</li>
+					<li>
+						<div class="recaptcha" data-netlify-recaptcha="true"></div>
+					</li>
+					<ul class="submit">
+						<li><input type="submit" value="Submit" class="button primary" /></li>
+					</ul>
 				</ul>
 			</form>
 		</section>
