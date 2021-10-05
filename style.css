@@ -1,3 +1,5 @@
+/* font-face loads for Reckless */
+
 @font-face {
   font-family: "Reckless";
   src: url("/fonts/Reckless-Regular.woff") format("woff"),
@@ -30,6 +32,8 @@
   font-style: italic;
 }
 
+/* Global default styles */
+
 * {
   box-sizing: border-box;
 }
@@ -39,6 +43,9 @@ body {
   font-family: "Reckless", serif;
   background-color: #fffaeb;
 }
+
+/* Containers and content */
+
 .main-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -46,8 +53,9 @@ body {
   margin: 0 5% 0 5%;
 }
 
+/* Row 1 = Header */
+
 .header-container {
-  /* background-color: red; */
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
@@ -59,7 +67,7 @@ body {
 .header-container h1,
 .header-container h2 {
   margin: 0;
-  color: #f15946;
+  color: #e87364;
 }
 
 .header-container h1 {
@@ -75,8 +83,9 @@ body {
   font-style: italic;
 }
 
+/* Row 2 = Side image & Welcome Text */
+
 .side-container {
-  /* background-color: blue; */
   grid-column-start: 1;
   grid-column-end: 2;
   min-width: 0;
@@ -84,6 +93,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .side-container img {
   width: 100%;
 }
@@ -93,6 +103,10 @@ body {
   grid-column-end: 3;
   min-width: 0;
   margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .content-container h2,
@@ -100,53 +114,68 @@ body {
   font-style: italic;
   font-weight: normal;
   margin: 0;
-  color: #f15946;
+  padding-bottom: 0.25em;
+  color: #e87364;
 }
+
+.content-container p {
+  margin: 0.5em 0;
+}
+
+/* Row 3 = Form */
 
 .form-container {
   grid-column-start: 1;
   grid-column-end: 3;
-  /* background-color: blueviolet; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.fields {
-  padding: 0.2em 0 0.2em 0;
+.contact {
+  width: 50%;
 }
 
 .form_header {
   font-family: "Reckless", serif;
-  font-size: 1.5em;
-  font-weight: normal;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 30px 0 0 0;
+  padding-bottom: 15px;
+  color: #e87364;
 }
 
-label {
+.form-labels {
   font-family: "Reckless", serif;
   font-size: 1em;
-  font-weight: normal;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  color: #e87364;
 }
 
-input {
+.form-container input {
+  margin-bottom: 5px;
   width: 100%;
   min-width: 25%;
 }
 
-.recaptcha {
-  width: 50%;
-}
-
-.submit {
+.form-container .submit {
   list-style-type: none;
 }
+
+/* Row 4 = Footer */
 
 .footer-container {
   /* background-color: yellow; */
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+/* Media Queries */
+
+/* Small screens */
 
 @media (max-width: 576px) {
   .main-container {
@@ -184,6 +213,8 @@ input {
     grid-column-end: 2;
   }
 }
+
+/* Wide Screens */
 
 @media (min-width: 1500px) {
   .main-container {
