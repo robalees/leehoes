@@ -29,51 +29,40 @@
 			<p>Love,</p>
 			<p>Erinn & Rob</p>
 		</article>
-		<section class="form-container">
-			<form class="contact" action="POST" data-netlify="true">
-				<h4 class="form_header">Submit your address here</h4>
-				<ul>
-					<li>
-						<label class="form-labels">Name</label>
-						<input type="text" name="first-name" id="first-name" placeholder="First name">
-					</li>
-					<li>
-						<input type="text" name="last-name" id="last-name" placeholder="Last Name">
-					</li>
-					<li>
-						<label class="form-labels">Email</label>
+		<form class="contact" action="POST" data-netlify-recaptcha="true" data-netlify="true">
+			<h4 class="form_header">Submit your address here</h4>
+			<ul>
+				<li>
+					<div class="grid grid-2">
+						<input type="text" name="name" id="name" placeholder="Name">
 						<input type="text" name="email_field" id="email_field" placeholder="Email">
-					</li>
-					<li>
-						<label class="form-labels">Address</label>
+					</div>
+				</li>
+				<li>
+					<div class="grid grid-2">
 						<input type="text" name="address" placeholder="Street Address">
-					</li>
-					<li>
 						<input type="text" name="address-2" placeholder="Apt #">
-					</li>
-					<li>
-						<label class="form-labels">State (US)/County (UK)</label>
+					</div>
+				</li>
+				<li>
+					<div class="grid grid-2">
 						<input type="text" name="state" placeholder="State (US)/County (UK)">
-					</li>
-					<li>
-						<label class="form-labels">ZIP (US)/Postal Code (UK)</label>
-					</li>
-					<li>
 						<input type="text" name="zip" placeholder="ZIP (US)/Postal Code (UK)">
-					</li>
-					<li>
-						<label class="form-labels">Country</label>
+					</div>
+				</li>
+				<li>
+					<div class="grid grid-1">
 						<input type="text" name="country" placeholder="Country">
-					</li>
-					<li>
+					</div>
+				</li>
+				<li>
+					<div class="grid grid-2">
 						<div class="recaptcha" data-netlify-recaptcha="true"></div>
-					</li>
-					<ul class="submit">
-						<li><input type="submit" value="Submit" class="button primary" /></li>
-					</ul>
-				</ul>
-			</form>
-		</section>
+						<input type="submit" value="Submit" class="button primary" />
+					</div>
+				</li>
+			</ul>
+		</form>
 		<footer class="footer-container"></footer>
 		</section>
 </body>
