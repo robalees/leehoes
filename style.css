@@ -43,14 +43,7 @@ body {
   font-family: "Reckless", serif;
   background-color: #fffaeb;
   margin: 0;
-}
-
-input,
-button {
-  width: 150px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* Containers and content */
@@ -233,7 +226,6 @@ button {
   .header-container h2 {
     font-size: 0.9em;
     margin: 0;
-    pointer-events: none;
   }
   .side-container {
     grid-column-start: 1;
