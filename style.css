@@ -110,8 +110,7 @@ body {
 }
 
 .content-container h2,
-.content-container h3,
-.content-container p {
+.content-container h3 {
   font-style: italic;
   margin: 0;
   padding-bottom: 0.25em;
@@ -129,6 +128,7 @@ body {
 
 .content-container p {
   margin: 0.5em 0;
+  color: #e87364;
 }
 
 /* Row 3 = Form */
