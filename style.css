@@ -233,6 +233,7 @@ body {
   .header-container h2 {
     font-size: 0.9em;
     margin: 0;
+    appearance: none;
   }
   .side-container {
     grid-column-start: 1;
@@ -241,6 +242,9 @@ body {
   .content-container {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+  .content-container h2 {
+    appearance: none;
   }
   .contact {
     grid-column-start: 1;
