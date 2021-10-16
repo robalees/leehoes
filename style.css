@@ -110,7 +110,8 @@ body {
 }
 
 .content-container h2,
-.content-container h3 {
+.content-container h3,
+.content-container p {
   font-style: italic;
   margin: 0;
   padding-bottom: 0.25em;
