@@ -43,7 +43,6 @@ body {
   font-family: "Reckless", serif;
   background-color: #fffaeb;
   margin: 0;
-  text-decoration: none;
 }
 
 /* Containers and content */
@@ -113,10 +112,18 @@ body {
 .content-container h2,
 .content-container h3 {
   font-style: italic;
-  font-weight: normal;
   margin: 0;
   padding-bottom: 0.25em;
   color: #e87364;
+}
+
+.content-container h2 {
+  font-weight: bold;
+}
+
+.content-container h3 {
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .content-container p {
