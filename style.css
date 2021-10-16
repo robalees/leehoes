@@ -233,6 +233,7 @@ button {
   .header-container h2 {
     font-size: 0.9em;
     margin: 0;
+    pointer-events: none;
   }
   .side-container {
     grid-column-start: 1;
