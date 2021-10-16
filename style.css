@@ -58,7 +58,7 @@ button {
 .main-container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 200px 1fr 1fr 100px;
+  grid-template-rows: 125px 1fr 1fr 100px;
   margin: 0 5% 0 5%;
 }
 
@@ -70,26 +70,24 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .header-container h1,
 .header-container h2 {
   margin: 0;
   color: #e87364;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .header-container h1 {
-  font-size: 2em;
-  font-weight: bold;
-  font-style: italic;
-  padding-bottom: 10px;
+  font-size: 2.5em;
+  padding-bottom: 0.25em;
 }
 
 .header-container h2 {
-  font-size: 1em;
-  font-weight: normal;
-  font-style: italic;
+  font-size: 1.25em;
 }
 
 /* Row 2 = Side image & Welcome Text */
@@ -101,6 +99,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.5em;
 }
 
 .side-container img {
@@ -111,7 +110,7 @@ button {
   grid-column-start: 2;
   grid-column-end: 3;
   min-width: 0;
-  margin: 2em;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -218,7 +217,7 @@ button {
 @media (max-width: 576px) {
   .main-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 125px auto auto auto 100px;
+    grid-template-rows: 100px auto auto auto 100px;
     margin: 0;
   }
   .header-container {
@@ -232,7 +231,7 @@ button {
     padding-bottom: 0.25em;
   }
   .header-container h2 {
-    font-size: 0.75em;
+    font-size: 0.9em;
     margin: 0;
   }
   .side-container {
