@@ -123,7 +123,7 @@ body {
 
 .content-container h3 {
   font-weight: normal;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .content-container p {
@@ -233,7 +233,7 @@ body {
   .header-container h2 {
     font-size: 0.9em;
     margin: 0;
-    appearance: none;
+    /* appearance: none; */
   }
   .side-container {
     grid-column-start: 1;
@@ -243,9 +243,9 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .content-container h2 {
+  /* .content-container h2 {
     appearance: none;
-  }
+  } */
   .contact {
     grid-column-start: 1;
     grid-column-end: 2;
