@@ -224,10 +224,10 @@ body {
   grid-column-end: 3;
 }
 
-/* a[x-apple-data-detectors] {
+a[x-apple-data-detectors] {
   color: inherit !important;
   text-decoration: inherit !important;
-} */
+}
 
 /* Media Queries */
 
