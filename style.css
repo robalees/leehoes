@@ -187,10 +187,6 @@ body {
   grid-template-columns: 1fr;
 }
 
-.contact .submit-button {
-  width: 100%;
-}
-
 .contact input {
   margin-bottom: 1rem;
   padding: 0.5rem;
@@ -198,13 +194,13 @@ body {
   box-shadow: 0 8px 6px -6px rgb(235, 235, 235);
 }
 
-.grid .recaptcha {
+/* .grid .recaptcha {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
+} */
 
 ::placeholder {
   font-family: "Reckless", serif;
@@ -214,6 +210,22 @@ body {
   margin: 5px 0 5px 0;
   display: inline-block;
   color: #e87364;
+}
+
+.contact .submit-button {
+  width: 125px;
+  padding: 0.75em;
+  justify-self: center;
+  margin-top: 1.5em;
+  background-color: #fffaeb;
+  color: #e87364;
+  border-radius: 10px;
+  border: 2px solid #e87364;
+}
+
+.contact .submit-button:hover {
+  background-color: #e87364;
+  color: #fffaeb;
 }
 
 /* Row 4 = Footer */
