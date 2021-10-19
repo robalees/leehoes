@@ -132,8 +132,13 @@ body {
   font-size: 1em;
 }
 
+.content-container h2 {
+  padding: 1.5em 0 0.75em 0;
+  font-size: 1em;
+}
+
 .content-container ul {
-  padding-top: 1em;
+  margin-top: 0;
   padding-left: 1.5em;
   color: #e87364;
   font-style: italic;
