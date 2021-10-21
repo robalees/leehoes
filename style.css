@@ -60,12 +60,19 @@ body {
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header-container .title {
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.header-container h1,
-.header-container h2 {
+.header-container .title h1,
+.header-container .title h2 {
   margin: 0;
   color: #e87364;
   text-align: center;
@@ -73,12 +80,12 @@ body {
   font-style: italic;
 }
 
-.header-container h1 {
+.header-container .title h1 {
   font-size: 2.5em;
   padding-bottom: 0.25em;
 }
 
-.header-container h2 {
+.header-container .title h2 {
   font-size: 1.25em;
 }
 
@@ -250,6 +257,16 @@ a[x-apple-data-detectors] {
 
 /* Small screens */
 
+@media (max-width: 990px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-container img {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .main-container {
     grid-template-columns: 1fr;
@@ -259,14 +276,19 @@ a[x-apple-data-detectors] {
   .header-container {
     grid-column-start: 1;
     grid-column-end: 2;
+    flex-direction: column;
+    justify-content: center;
     /* margin-bottom: 0.5em; */
   }
-  .header-container h1 {
+  .header-container img {
+    display: none;
+  }
+  .header-container .title h1 {
     font-size: 1.5em;
     margin: 0;
     padding-bottom: 0.25em;
   }
-  .header-container h2 {
+  .header-container .title h2 {
     font-size: 0.9em;
     margin: 0;
     /* appearance: none; */
