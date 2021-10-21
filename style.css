@@ -65,6 +65,11 @@ body {
   margin-top: 20px;
 }
 
+.header-container img {
+  max-height: 105px;
+  width: auto;
+}
+
 .header-container .title {
   display: flex;
   flex-direction: column;
