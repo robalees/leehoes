@@ -50,7 +50,7 @@ body {
 .main-container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 125px 1fr 1fr 100px;
+  grid-template-rows: 125px 1fr 400px 200px;
   margin: 0 5% 0 5%;
 }
 
@@ -163,7 +163,7 @@ body {
 
 /* Row 3 = Form */
 
-.contact {
+.contact-container {
   grid-column-start: 1;
   grid-column-end: 3;
   max-width: 800px;
@@ -176,7 +176,7 @@ body {
   font-family: "Reckless", serif;
   font-size: 1.25em;
   font-weight: bold;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
   padding-bottom: 15px;
   color: #e87364;
   text-align: center;
@@ -206,18 +206,10 @@ body {
 
 .contact input {
   margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-style: none;
-  box-shadow: 0 8px 6px -6px rgb(235, 235, 235);
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 2px solid #e87364;
 }
-
-/* .grid .recaptcha {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-} */
 
 ::placeholder {
   font-family: "Reckless", serif;
@@ -233,7 +225,7 @@ body {
   width: 125px;
   padding: 0.75em;
   justify-self: center;
-  margin-top: 1.5em;
+  margin: 1.5em 0;
   background-color: #fffaeb;
   color: #e87364;
   border-radius: 10px;
@@ -250,20 +242,21 @@ body {
 .footer-container {
   grid-column-start: 1;
   grid-column-end: 3;
-  padding: 25px 0 100px 0;
+  margin: 25px 0 0 0;
 }
 
 .footer-container p {
   display: none;
+  margin: 0;
 }
 
 .footer-container ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
   text-align: center;
   justify-content: center;
+  align-items: baseline;
+  padding-left: 0;
 }
 
 .footer-container li {
@@ -274,10 +267,14 @@ body {
   margin: 0 0.5rem;
   color: #e87364;
   border: 2px solid #e87364;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
 }
 
-.footer-container span {
+.footer-container .countdown {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 a[x-apple-data-detectors] {
@@ -310,7 +307,6 @@ a[x-apple-data-detectors] {
     grid-column-end: 2;
     flex-direction: column;
     justify-content: center;
-    /* margin-bottom: 0.5em; */
   }
   .header-container img {
     display: none;

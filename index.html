@@ -42,46 +42,48 @@
 				</ul>
 			</section>
 		</article>
-		<form class="contact" action="POST" data-netlify="true">
-			<h4 class="form_header">Submit your address here</h4>
-			<ul>
-				<li>
-					<div class="grid grid-2">
-						<input type="text" name="name" id="name" placeholder="Name">
-						<input type="text" name="email_field" id="email_field" placeholder="Email">
-					</div>
-				</li>
-				<li>
-					<div class="grid grid-2">
-						<input type="text" name="address" placeholder="Street Address">
-						<input type="text" name="address-2" placeholder="Apt #">
-					</div>
-				</li>
-				<li>
-					<div class="grid grid-2">
-						<input type="text" name="state" placeholder="State (US)/County (UK)">
-						<input type="text" name="zip" placeholder="ZIP (US)/Postal Code (UK)">
-					</div>
-				</li>
-				<li>
-					<div class="grid grid-1">
-						<input type="text" name="country" placeholder="Country">
-					</div>
-				</li>
-				<li>
-					<div class="grid grid-1">
-						<button type="submit" value="Submit" class="submit-button">SUBMIT</button>
-					</div>
-				</li>
-			</ul>
-		</form>
+		<section class="contact-container">
+			<form class="contact" action="POST" data-netlify="true">
+				<h4 class="form_header">Submit your address here</h4>
+				<ul>
+					<li>
+						<div class="grid grid-2">
+							<input type="text" name="name" id="name" placeholder="Name">
+							<input type="text" name="email_field" id="email_field" placeholder="Email">
+						</div>
+					</li>
+					<li>
+						<div class="grid grid-2">
+							<input type="text" name="address" placeholder="Street Address">
+							<input type="text" name="address-2" placeholder="Apt #">
+						</div>
+					</li>
+					<li>
+						<div class="grid grid-2">
+							<input type="text" name="state" placeholder="State (US)/County (UK)">
+							<input type="text" name="zip" placeholder="ZIP (US)/Postal Code (UK)">
+						</div>
+					</li>
+					<li>
+						<div class="grid grid-1">
+							<input type="text" name="country" placeholder="Country">
+						</div>
+					</li>
+					<li>
+						<div class="grid grid-1">
+							<button type="submit" value="Submit" class="submit-button">SUBMIT</button>
+						</div>
+					</li>
+				</ul>
+			</form>
+		</section>
 		<footer class="footer-container">
 			<p id="done"></p>
 			<ul>
-				<li><span id="days">0</span> Days</li>
-				<li><span id="hours">0</span> Hours</li>
-				<li><span id="minutes">0</span> Minutes</li>
-				<li><span id="seconds">0</span> Seconds</li>
+				<li><span id="days" class="countdown">0</span> Days</li>
+				<li><span id="hours" class="countdown">0</span> Hours</li>
+				<li><span id="minutes" class="countdown">0</span> Minutes</li>
+				<li><span id="seconds" class="countdown">0</span> Seconds</li>
 			</ul>
 		</footer>
 		</section>
