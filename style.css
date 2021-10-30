@@ -335,6 +335,10 @@ a[x-apple-data-detectors] {
     width: 350px;
   }
 
+  .contact-container ul {
+    margin: 0;
+  }
+
   .contact input {
     width: 100%;
     margin-bottom: 0.75rem;
@@ -350,9 +354,14 @@ a[x-apple-data-detectors] {
     margin: 0;
   }
 
+  .footer-container ul {
+    margin: 0;
+    padding-bottom: 1em;
+  }
+
   .footer-container li {
     font-size: 1em;
-    padding: 1em 0.5em;
+    padding: 0.75em 0.5em;
     margin: 0;
   }
 }
