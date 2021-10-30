@@ -299,7 +299,7 @@ a[x-apple-data-detectors] {
 @media (max-width: 576px) {
   .main-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto auto 100px;
+    grid-template-rows: 100px auto auto auto auto;
     margin: 0;
   }
   .header-container {
