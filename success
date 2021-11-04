@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Leehoes</title>
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+    <script defer type="text/javascript" src="script.js"></script>
+    <meta name="format-detection" content="date=no">
+</head>
+
+<body>
+    <section class="main-container">
+        <header class="header-container">
+            <img src="images/header-left.png" alt="Header image left">
+            <section class="title">
+                <h1>The Leehoes</h1>
+                <h2>September 17, 2022 | New York, NY</h2>
+            </section>
+            <img src="images/header-right.png" alt="Header image right">
+        </header>
+        <footer class="footer-container">
+            <p id="done"></p>
+            <ul>
+                <li><span id="days" class="countdown">0</span> Days</li>
+                <li><span id="hours" class="countdown">0</span> Hours</li>
+                <li><span id="minutes" class="countdown">0</span> Minutes</li>
+                <li><span id="seconds" class="countdown">0</span> Seconds</li>
+            </ul>
+        </footer>
+    </section>
+</body>
+
+</html>
