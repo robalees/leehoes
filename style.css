@@ -277,6 +277,13 @@ a[x-apple-data-detectors] {
   text-decoration: inherit !important;
 }
 
+.success-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+}
+
 /* Media Queries */
 
 /* Small screens */
