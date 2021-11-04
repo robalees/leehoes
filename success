@@ -21,6 +21,12 @@
             </section>
             <img src="images/header-right.png" alt="Header image right">
         </header>
+        <section class="side-container">
+            <img src="images/botanical.png" alt="Botanical">
+        </section>
+        <article class="content-container">
+                <h1>Thank you</h2>
+        </article>
         <footer class="footer-container">
             <p id="done"></p>
             <ul>
