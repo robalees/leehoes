@@ -24,3 +24,5 @@ const x = setInterval(function () {
   minutesEl.innerText = Math.floor((difference % hours) / minutes);
   secondsEl.innerText = Math.floor((difference % minutes) / seconds);
 }, seconds);
+
+location.reload();
