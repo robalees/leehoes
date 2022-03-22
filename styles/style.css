@@ -94,6 +94,26 @@ body {
   font-size: 1.25em;
 }
 
+.menu {
+  padding-top: 1em;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #e87364;
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+}
+
 /* Row 2 = Side image & Welcome Text */
 
 .side-container {
