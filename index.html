@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>The Leehoes</title>
 	<link rel="stylesheet" href="/styles/style.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/styles/home.css" type="text/css" charset="utf-8">
 	<script defer type="text/javascript" src="/scripts/script.js"></script>
 	<meta name="format-detection" content="date=no">
 </head>
@@ -20,10 +21,11 @@
 			</section>
 			<nav class="menu">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Hotels</a></li>
-					<li><a href="">RSVP</a></li>
-					<li><a href="">Schedule</a></li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/pages/hotels.html">Hotels</a></li>
+					<li><a href="/pages/rsvp.html">RSVP</a></li>
+					<li><a href="/pages/schedule.html">Schedule</a></li>
+					<li><a href="/pages/registry.html">Registry</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -51,42 +53,6 @@
 				</section>
 			</section>
 		</article>
-		<section class="contact-container">
-			<form class="contact" method="POST" action="/pages/success" data-netlify="true">
-				<h4 class="form_header">Submit your address here</h4>
-				<ul>
-					<li>
-						<div class="grid grid-2">
-							<input type="text" name="name" id="name" placeholder="Name">
-							<input type="text" name="email_field" id="email_field" placeholder="Email">
-						</div>
-					</li>
-					<li>
-						<div class="grid grid-2">
-							<input type="text" name="address" placeholder="Street Address">
-							<input type="text" name="address-2" placeholder="Apt #">
-						</div>
-					</li>
-					<li>
-						<div class="grid grid-2">
-							<input type="text" name="city" placeholder="City">
-							<input type="text" name="state" placeholder="State (US)/County (UK)">
-						</div>
-					</li>
-					<li>
-						<div class="grid grid-2">
-							<input type="text" name="zip" placeholder="ZIP (US)/Postal Code (UK)">
-							<input type="text" name="country" placeholder="Country">
-						</div>
-					</li>
-					<li>
-						<div class="grid grid-1">
-							<button type="submit" value="Submit" class="submit-button">SUBMIT</button>
-						</div>
-					</li>
-				</ul>
-			</form>
-		</section>
 		<footer class="footer-container">
 			<p id="done"></p>
 			<ul>

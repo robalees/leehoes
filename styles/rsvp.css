@@ -1,0 +1,87 @@
+/* Containers and content */
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr 200px;
+  margin: 0 5% 0 5%;
+}
+
+/* Row 3 = Form */
+
+.contact-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.form_header {
+  font-family: "Reckless", serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  padding-bottom: 15px;
+  color: #e87364;
+  text-align: center;
+}
+
+.contact {
+  width: 600px;
+}
+
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact .grid {
+  display: grid;
+}
+
+.contact .grid-2 {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact .grid input {
+  width: 100%;
+}
+
+.contact .grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.contact input {
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 2px solid #e87364;
+}
+
+::placeholder {
+  font-family: "Reckless", serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  color: #e87364;
+}
+
+.contact .submit-button {
+  width: 125px;
+  padding: 0.75em;
+  justify-self: center;
+  margin: 1.5em 0;
+  background-color: #fffaeb;
+  color: #e87364;
+  border-radius: 10px;
+  border: 2px solid #e87364;
+  font-weight: bold;
+}
+
+.contact .submit-button:hover {
+  background-color: #e87364;
+  color: #fffaeb;
+}
