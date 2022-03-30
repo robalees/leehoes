@@ -54,11 +54,13 @@ body {
   padding: 1em 0 0 0;
 }
 
+.header-container .logo {
+  display: flex;
+  justify-content: center;
+}
+
 .header-container .logo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 4em;
+  width: 6em;
   padding: 1em 0 1em 0;
 }
 
@@ -204,25 +206,25 @@ a[x-apple-data-detectors] {
     grid-column-end: 2;
   }
 
-  .contact-container {
+  .rsvp-container {
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 0 10px 0 10px;
   }
 
-  .contact {
+  .rsvp {
     width: 350px;
   }
 
-  .contact-container ul {
+  .rsvp-container ul {
     margin: 0;
   }
 
-  .contact input {
+  .rsvp input {
     width: 100%;
     margin-bottom: 0.75rem;
   }
-  .contact .grid-2 {
+  .rsvp .grid-2 {
     grid-template-columns: 1fr;
     gap: 0;
   }

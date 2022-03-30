@@ -29,20 +29,34 @@
                 </ul>
             </nav>
         </header>
-        <section class="contact-container">
-            <form class="contact" method="POST" action="/pages/success" data-netlify="true">
-                <h4 class="form_header">Submit your address here</h4>
+        <section class="rsvp-container">
+            <form class="rsvp" method="POST" action="/pages/success" data-netlify="true">
+                <h4 class="form_header">Please RSVP</h4>
                 <ul>
                     <li>
                         <div class="grid grid-2">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="text" name="email_field" id="email_field" placeholder="Email">
+                            <label for="attending">Will you be attending?</label>
+                            <select name="attending" id="attending">
+                                <option value="">Please choose an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                         </div>
                     </li>
                     <li>
                         <div class="grid grid-2">
-                            <input type="text" name="address" placeholder="Street Address">
-                            <input type="text" name="address-2" placeholder="Apt #">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="plus_one_field" id="plus_one_field" placeholder="Guests Name">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid grid-2">
+                            <label for="meal-choice">Pick a meal</label>
+                            <select name="meal-choice" id="meal-choice">
+                                <option value="">Please choose an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                         </div>
                     </li>
                     <li>
