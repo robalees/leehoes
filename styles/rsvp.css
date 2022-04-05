@@ -42,12 +42,13 @@
 
 .rsvp .grid-2 {
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  row-gap: 1rem;
+  column-gap: 2rem;
 }
 
 .rsvp .grid-2 label {
   display: flex;
-  justify-content: center;
+  justify-content:flex-end;
   align-items: center;
   padding-bottom: 1em;
   font-family: "Reckless", serif;
@@ -80,6 +81,7 @@
   margin: 5px 0 5px 0;
   display: inline-block;
   color: #e87364;
+  opacity: 1;
 }
 
 .rsvp select {

@@ -35,24 +35,32 @@
                 <ul>
                     <li>
                         <div class="grid grid-2">
-                            <label for="attending">Will you be attending?</label>
-                            <select name="attending" id="attending">
-                                <option value="">Please choose an option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="grid grid-2">
+                            <label for="name">Name *</label>
                             <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="text" name="plus_one_field" id="plus_one_field" placeholder="Guests Name">
                         </div>
                     </li>
                     <li>
                         <div class="grid grid-2">
-                            <label for="meal-choice">Pick a meal</label>
-                            <select name="meal-choice" id="meal-choice">
+                            <label for="attending">Will you be attending? *</label>
+                            <select name="attending" id="attending" required="required">
+                                <option value="">Please choose an option</option>
+                                <option value="yes">Yes, with a guest</option>
+                                <option value="yes">Yes, without a guest</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid grid-2">
+                            <label for="plus_one_field">Accompanying Guest's Name</label>
+                            <input type="text" name="plus_one_field" id="plus_one_field"
+                                placeholder="Accompanying Guest's Name">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid grid-2">
+                            <label for="meal-choice">Your choice of meal *</label>
+                            <select name="meal-choice" id="Your choice of meal" required="required">
                                 <option value="">Please choose an option</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
@@ -61,14 +69,18 @@
                     </li>
                     <li>
                         <div class="grid grid-2">
-                            <input type="text" name="city" placeholder="City">
-                            <input type="text" name="state" placeholder="State (US)/County (UK)">
+                            <label for="meal-choice-guest">Guest's choice of meal</label>
+                            <select name="meal-choice-guest" id="Guest's choice of meal">
+                                <option value="">Please choose an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                         </div>
                     </li>
                     <li>
                         <div class="grid grid-2">
-                            <input type="text" name="zip" placeholder="ZIP (US)/Postal Code (UK)">
-                            <input type="text" name="country" placeholder="Country">
+                            <label for="song">Suggest a song for the party</label>
+                            <input type="text" name="song" id="song" placeholder="Suggest a song for the party">
                         </div>
                     </li>
                     <li>
