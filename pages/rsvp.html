@@ -8,6 +8,7 @@
     <title>The Leehoes</title>
     <link rel="stylesheet" href="/styles/style.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="/styles/rsvp.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="/styles/mediaqueries.css" type="text/css" charset="utf-8">
     <script defer type="text/javascript" src="/scripts/script.js"></script>
     <meta name="format-detection" content="date=no">
 </head>
@@ -41,25 +42,25 @@
                     </li>
                     <li>
                         <div class="grid grid-2">
-                            <label for="attending">Will you be attending?</label>
+                            <label for="attending">Will you be attending? *</label>
                             <select name="attending" id="attending" required="required">
                                 <option value="">Please choose an option</option>
-                                <option value="yes">Yes with a guest</option>
-                                <option value="yes">Yes without a guest</option>
+                                <option value="yes">Yes, with a guest</option>
+                                <option value="yes">Yes, without a guest</option>
                                 <option value="no">No</option>
                             </select>
                         </div>
                     </li>
                     <li>
                         <div class="grid grid-2">
-                            <label for="plus_one_field">Accompanying Guest's Name</label>
+                            <label for="plus_one_field">Accompanying guest's name</label>
                             <input type="text" name="plus_one_field" id="plus_one_field"
-                                placeholder="Accompanying Guest's Name">
+                                placeholder="Accompanying guest's name">
                         </div>
                     </li>
                     <li>
                         <div class="grid grid-2">
-                            <label for="meal-choice">Your choice of meal</label>
+                            <label for="meal-choice">Your choice of meal *</label>
                             <select name="meal-choice" id="Your choice of meal" required="required">
                                 <option value="">Please choose an option</option>
                                 <option value="yes">Yes</option>
@@ -90,6 +91,10 @@
                     </li>
                 </ul>
             </form>
+        </section>
+        <section class="information">
+            <p>We look forward to seeing you in September! Please celebrate with us at a adults only reception
+                immediately following the ceremony.</p>
         </section>
         <footer class="footer-container">
             <p id="done"></p>

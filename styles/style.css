@@ -162,12 +162,8 @@ a[x-apple-data-detectors] {
 
 /* Small screens */
 
-@media (max-width: 990px) {
-  .header-container {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .header-container img {
+/* @media (max-width: 990px) {
+  .header-container .logo img {
     display: none;
   }
 }
@@ -178,29 +174,39 @@ a[x-apple-data-detectors] {
     grid-template-rows: 100px auto auto auto auto;
     margin: 0;
   }
+
   .header-container {
     grid-column-start: 1;
     grid-column-end: 2;
     flex-direction: column;
     justify-content: center;
   }
+
   .header-container img {
     display: none;
   }
+
   .header-container .title h1 {
     font-size: 1.5em;
     margin: 0;
     padding-bottom: 0.25em;
   }
+
   .header-container .title h2 {
     font-size: 0.9em;
     margin: 0;
   }
+
   .side-container {
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 0;
   }
+
+  .side-container img {
+    max-width: 100%;
+  }
+
   .content-container {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -224,6 +230,7 @@ a[x-apple-data-detectors] {
     width: 100%;
     margin-bottom: 0.75rem;
   }
+
   .rsvp .grid-2 {
     grid-template-columns: 1fr;
     gap: 0;
@@ -249,8 +256,8 @@ a[x-apple-data-detectors] {
 
 /* Wide Screens */
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
   .main-container {
     margin: 0 20% 0 20%;
   }
-}
+} */

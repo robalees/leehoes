@@ -48,7 +48,7 @@
 
 .rsvp .grid-2 label {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
   padding-bottom: 1em;
   font-family: "Reckless", serif;
@@ -111,4 +111,16 @@
 .rsvp .submit-button:hover {
   background-color: #e87364;
   color: #fffaeb;
+}
+
+.information {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.information p {
+  font-family: "Reckless", serif;
+  font-size: 1em;
+  color: #e87364;
+  text-align: center;
 }
