@@ -58,6 +58,25 @@
   font-size: 1em;
 }
 
+.content-container a:link {
+  text-decoration: none;
+  color: #e87364;
+  text-decoration: underline;
+}
+
+.content-container a:visited {
+  text-decoration: none;
+  color: #e87364;
+}
+
+.content-container a:hover {
+  text-decoration: underline;
+}
+
+.content-container a:active {
+  text-decoration: underline;
+}
+
 .content-container h2 {
   padding: 1.5em 0 0.75em 0;
   font-size: 1em;
