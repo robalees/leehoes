@@ -12,32 +12,79 @@
   grid-column-start: 1;
   grid-column-end: 2;
   min-width: 0;
+  padding: 2em;
   max-width: 100%;
-  padding: 1.5em;
   display: flex;
   flex-direction: column;
+  color: #e87364;
+}
+
+.hotels .description {
+  padding: 0 0 1em 0;
+}
+
+.hotels .description h1 {
+  margin: 0;
+}
+
+.hotels .hotel-header,
+h1 {
+  font-size: 2em;
+}
+
+.hotels p {
+  font-size: 1.25em;
+  margin: 1em 0 1em 0;
 }
 
 .hotels h1 {
-  color: #e87364;
-  font-style: italic;
+  font-size: 1.25em;
 }
 
 .hotels ul {
   padding: 0;
-  color: #e87364;
-  font-style: italic;
+  margin: 0;
   font-size: 1em;
 }
 
 .hotels li {
   list-style-type: none;
-  color: #e87364;
   font-size: 1em;
+  line-height: 1.5em;
+  padding: 1em 0 1em 0;
 }
 
-.lic {
-  width: 100%;
+.hotels .city h1 {
+  margin: 0;
+}
+
+.hotels .city ul {
+  padding: 0 0 1.5em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hotels .hotel-name {
+  font-weight: bold;
+}
+
+.hotels a:link {
+  text-decoration: none;
+  color: #e87364;
+  text-decoration: underline;
+}
+
+.hotels a:visited {
+  text-decoration: none;
+  color: #e87364;
+}
+
+.hotels a:hover {
+  text-decoration: underline;
+}
+
+.hotels a:active {
+  text-decoration: underline;
 }
 
 .side-container {
