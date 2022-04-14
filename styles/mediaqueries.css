@@ -115,6 +115,7 @@
     .schedule-container {
         grid-column-start: 1;
         grid-column-end: 2;
+        padding: 0 1em;
     }
 
     .schedule-content {
