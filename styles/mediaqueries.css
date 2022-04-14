@@ -64,10 +64,12 @@
 
     .rsvp select {
         height: 50px;
+        font-size: 1em;
     }
 
     .rsvp input {
         height: 50px;
+        font-size: 1em;
     }
 
     .rsvp-container ul {
