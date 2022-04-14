@@ -26,8 +26,8 @@
         display: none;
     } */
 
-    .header-container .logo {
-        height: 75%;
+    .header-container .logo img {
+        width: 4em;
     }
 
     .header-container .title h1 {
@@ -115,6 +115,18 @@
     .schedule-container {
         grid-column-start: 1;
         grid-column-end: 2;
+    }
+
+    .schedule-content {
+        flex-direction: column;
+    }
+
+    .schedule-content h1 {
+        margin: 0;
+    }
+
+    .schedule-container li {
+        padding: 0.5em 0em;
     }
 
     .footer-container ul {
