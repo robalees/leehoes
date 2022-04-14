@@ -2,16 +2,16 @@
 
 /* Small screens */
 
-@media (max-width: 990px) {
+/* @media (max-width: 990px) {
     .header-container .logo img {
         display: none;
     }
-}
+} */
 
 @media (max-width: 576px) {
     .main-container {
         grid-template-columns: 100%;
-        grid-template-rows: 100px auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         margin: 0;
     }
 
@@ -22,12 +22,16 @@
         justify-content: center;
     }
 
-    .header-container img {
+    /* .header-container img {
         display: none;
+    } */
+
+    .header-container .logo {
+        height: 75%;
     }
 
     .header-container .title h1 {
-        font-size: 1.5em;
+        font-size: 2em;
         margin: 0;
         padding-bottom: 0.25em;
     }
@@ -52,6 +56,11 @@
         grid-column-end: 2;
     }
 
+    .hotels .city ul {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
     .rsvp-container {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -60,6 +69,11 @@
 
     .rsvp {
         width: 350px;
+    }
+
+    .rsvp .form_header {
+        font-size: 1.5em;
+        margin: 40px 0 0 0;
     }
 
     .rsvp select {
@@ -87,6 +101,11 @@
         font-size: 1em;
     }
 
+    .information {
+        margin: 0 1em;
+        font-size: 1.25em;
+    }
+
     .rsvp .grid-2 .footer-container {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -109,6 +128,6 @@
 
 @media (min-width: 1500px) {
     .main-container {
-        margin: 0 20% 0 20%;
+        margin: 0 10%;
     }
 }
