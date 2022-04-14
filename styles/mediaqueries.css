@@ -84,6 +84,7 @@
     .rsvp .grid-2 label {
         justify-content: flex-start;
         padding-bottom: 0.75em;
+        font-size: 1em;
     }
 
     .rsvp .grid-2 .footer-container {
