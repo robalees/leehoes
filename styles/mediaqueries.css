@@ -62,6 +62,14 @@
         width: 350px;
     }
 
+    .rsvp select {
+        height: 50px;
+    }
+
+    .rsvp input {
+        height: 50px;
+    }
+
     .rsvp-container ul {
         margin: 0;
     }
@@ -76,7 +84,7 @@
         padding-bottom: 0.75em;
     }
 
-    .footer-container {
+    .rsvp .grid-2 .footer-container {
         grid-column-start: 1;
         grid-column-end: 2;
         margin: 0;
