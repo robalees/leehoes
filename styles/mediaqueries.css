@@ -112,6 +112,11 @@
         margin: 0;
     }
 
+    .schedule-container {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
     .footer-container ul {
         margin: 0;
         padding-bottom: 1em;
