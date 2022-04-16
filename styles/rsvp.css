@@ -57,10 +57,6 @@
   padding: 0 0 1em 0;
 }
 
-.rsvp-bottom {
-  width: 100%;
-}
-
 .rsvp {
   display: flex;
   justify-content: center;
