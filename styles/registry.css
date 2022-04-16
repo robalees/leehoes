@@ -2,7 +2,38 @@
 
 .main-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: auto auto; */
   grid-template-rows: auto 1fr 200px;
   margin: 0 5% 0 5%;
+}
+
+.registry-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  min-width: 0;
+  padding: 2em;
+  max-width: 100%;
+  color: #e87364;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registry-content h1 {
+  font-size: 3em;
+}
+
+.side-container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.side-container img {
+  width: 100%;
 }
