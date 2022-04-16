@@ -31,72 +31,82 @@
             </nav>
         </header>
         <section class="rsvp-container">
-            <form class="rsvp" method="POST" action="/pages/success" data-netlify="true">
+            <section class="rsvp-top">
                 <h4 class="form_header">Please RSVP by June 1st 2022</h4>
-                <p>We look forward to seeing you in September! Please celebrate with us at an adults
+                <p class="rsvp-description">We look forward to seeing you in September!</br>Please celebrate with us at
+                    an
+                    adults
                     only reception
                     immediately following the ceremony.</p>
+                <h3 class="dinner-title">There are two dinner options:</h3>
                 <ul>
-                    <li>
-                        <div class="grid grid-2">
-                            <label for="name">Name *</label>
-                            <input type="text" name="name" id="name" placeholder="Type name here" required="required">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="grid grid-2">
-                            <label for="attending">Will you be attending? *</label>
-                            <select name="attending" id="attending" required="required">
-                                <option value="">Please choose an option</option>
-                                <option value="yes">Yes, with a guest</option>
-                                <option value="yes">Yes, without a guest</option>
-                                <option value="no">No</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="grid grid-2">
-                            <label for="plus_one_field">Accompanying guest's name</label>
-                            <input type="text" name="plus_one_field" id="plus_one_field" placeholder="Type name here">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="grid grid-2">
-                            <label for="meal-choice">Your choice of meal *</label>
-                            <select name="meal-choice" id="meal-choice" required="required">
-                                <option value="">Please choose an option</option>
-                                <option value="steak">NY Strip With Gremolata</option>
-                                <option value="pasta">Fresh pasta with pesto, mixed summer squash, swiss chard,
-                                    fennel
-                                </option>
-                            </select>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="grid grid-2">
-                            <label for="meal-choice-guest">Guest's choice of meal</label>
-                            <select name="meal-choice-guest" id="meal-choice-guest">
-                                <option value="">Please choose an option</option>
-                                <option value="steak">NY Strip With Gremolata</option>
-                                <option value="pasta">Fresh pasta with pesto, mixed summer squash, swiss chard,
-                                    fennel
-                                </option>
-                            </select>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="grid grid-2">
-                            <label for="song">Suggest a song for the party</label>
-                            <input type="text" name="song" id="song" placeholder="Suggest a song for the party">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="grid grid-1">
-                            <button type="submit" value="Submit" class="submit-button">SUBMIT</button>
-                        </div>
-                    </li>
+                    <li>New York strip steak with gremolata</li>
+                    <li>Fresh pasta with pesto, mixed summer squash, swiss chard,
+                        fennel</li>
                 </ul>
-            </form>
+            </section>
+            <section class="rsvp-bottom">
+                <form class="rsvp" method="POST" action="/pages/success" data-netlify="true">
+                    <ul>
+                        <li>
+                            <div class="grid grid-2">
+                                <label for="name">Name *</label>
+                                <input type="text" name="name" id="name" placeholder="Type name here"
+                                    required="required">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid grid-2">
+                                <label for="attending">Will you be attending? *</label>
+                                <select name="attending" id="attending" required="required">
+                                    <option value="">Please choose an option</option>
+                                    <option value="yes">Yes, with a guest</option>
+                                    <option value="yes">Yes, without a guest</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid grid-2">
+                                <label for="plus_one_field">Accompanying guest's name</label>
+                                <input type="text" name="plus_one_field" id="plus_one_field"
+                                    placeholder="Type name here">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid grid-2">
+                                <label for="meal-choice">Your choice of meal *</label>
+                                <select name="meal-choice" id="meal-choice" required="required">
+                                    <option value="">Please choose an option</option>
+                                    <option value="steak">Steak</option>
+                                    <option value="pasta">Pasta</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid grid-2">
+                                <label for="meal-choice-guest">Guest's choice of meal</label>
+                                <select name="meal-choice-guest" id="meal-choice-guest">
+                                    <option value="">Please choose an option</option>
+                                    <option value="steak">Steak</option>
+                                    <option value="pasta">Pasta</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid grid-2">
+                                <label for="song">Suggest a song for the party</label>
+                                <input type="text" name="song" id="song" placeholder="Suggest a song for the party">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid grid-1">
+                                <button type="submit" value="Submit" class="submit-button">SUBMIT</button>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </section>
         </section>
         <footer class="footer-container">
             <p id="done"></p>

@@ -2,7 +2,7 @@
 
 .main-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr 200px;
   margin: 0 5% 0 5%;
 }
@@ -12,31 +12,59 @@
 .rsvp-container {
   grid-column-start: 1;
   grid-column-end: 3;
-  display: flex;
-  justify-content: center;
   padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e87364;
 }
 
-.rsvp {
-  width: 600px;
-}
-
-.form_header {
+.rsvp-container .form_header {
   font-family: "Reckless", serif;
   font-size: 2em;
   font-weight: bold;
-  margin: 20px 0 0 0;
-  padding-bottom: 15px;
-  color: #e87364;
   text-align: center;
+  margin: 0;
+  padding: 0 0 1em 0;
 }
 
-.rsvp p {
+.rsvp-container .rsvp-description {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.rsvp-container .dinner-title {
+  text-align: left;
+}
+
+.rsvp-container p {
   font-family: "Reckless", serif;
   font-size: 1.25em;
   color: #e87364;
   text-align: center;
-  padding-bottom: 1.5em;
+  padding: 0.5em;
+  margin: 0;
+}
+
+.rsvp-container .rsvp-top ul {
+  font-family: "Reckless",
+    serif;
+  font-size: 1.25em;
+  color: #e87364;
+  text-align: left;
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+.rsvp-bottom {
+  width: 100%;
+}
+
+.rsvp {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
 }
 
 .rsvp ul {
@@ -90,16 +118,6 @@
   display: inline-block;
   color: #e87364;
   opacity: 1;
-}
-
-#meal-choice {
-  color: red;
-  max-width: 600px;
-}
-
-#meal-choice-guest {
-  color: green;
-  max-width: 600px;
 }
 
 .rsvp select {
