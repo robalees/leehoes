@@ -17,6 +17,10 @@
   padding-top: 2em;
 }
 
+.rsvp {
+  width: 600px;
+}
+
 .form_header {
   font-family: "Reckless", serif;
   font-size: 2em;
@@ -27,8 +31,12 @@
   text-align: center;
 }
 
-.rsvp {
-  width: 600px;
+.rsvp p {
+  font-family: "Reckless", serif;
+  font-size: 1.25em;
+  color: #e87364;
+  text-align: center;
+  padding-bottom: 1.5em;
 }
 
 .rsvp ul {
@@ -84,6 +92,16 @@
   opacity: 1;
 }
 
+#meal-choice {
+  color: red;
+  max-width: 600px;
+}
+
+#meal-choice-guest {
+  color: green;
+  max-width: 600px;
+}
+
 .rsvp select {
   margin-bottom: 1rem;
   padding: 0.9rem;
@@ -111,16 +129,4 @@
 .rsvp .submit-button:hover {
   background-color: #e87364;
   color: #fffaeb;
-}
-
-.information {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.information p {
-  font-family: "Reckless", serif;
-  font-size: 1em;
-  color: #e87364;
-  text-align: center;
 }
