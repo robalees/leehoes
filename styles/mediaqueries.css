@@ -125,6 +125,10 @@
         font-size: 1em;
     }
 
+    .rsvp li {
+        width: 300px;
+    }
+
     .information {
         margin: 0 1em;
         font-size: 1.25em;
