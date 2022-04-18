@@ -1,6 +1,6 @@
 /* Containers and content */
 
-.main-container {
+.rsvp-main-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr 200px;
@@ -28,22 +28,16 @@
   padding: 0 0 1em 0;
 }
 
-.rsvp-container .rsvp-description {
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 2em;
-}
-
 .rsvp-container .dinner-title {
   text-align: left;
 }
 
-.rsvp-container p {
+.rsvp-container .rsvp-top p {
   font-family: "Reckless", serif;
   font-size: 1.25em;
   color: #e87364;
-  text-align: center;
-  padding: 0.5em;
+  text-align: left;
+  /* padding: 0.5em; */
   margin: 0;
 }
 
@@ -55,6 +49,7 @@
   text-align: left;
   margin: 0;
   padding: 0 0 1em 0;
+  list-style-position: inside;
 }
 
 .rsvp {
@@ -90,9 +85,9 @@
   color: #e87364;
 }
 
-.rsvp .grid input {
+/* .rsvp .grid input {
   width: 100%;
-}
+} */
 
 .rsvp .grid-1 {
   grid-template-columns: 1fr;
