@@ -16,13 +16,14 @@
   max-width: 100%;
   color: #e87364;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.registry-content h1 {
-  font-size: 3em;
+.registry-container .registry-text h1 {
+  font-size: 1.5em;
+}
+
+.registry-content {
+  outline: #e87364 solid 2px;
 }
 
 .side-container {
