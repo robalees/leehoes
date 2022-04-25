@@ -199,6 +199,17 @@
 
 /* Registry */
 @media (max-width: 1360px) {
+
+    .registry {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .registry-side-container {
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+
     .registry-side-container img {
         display: none;
     }
