@@ -36,6 +36,25 @@
   padding: 0 0 2em 0;
 }
 
+.registry-content a:link {
+  text-decoration: none;
+  color: #e87364;
+  text-decoration: underline;
+}
+
+.registry-content a:visited {
+  text-decoration: none;
+  color: #e87364;
+}
+
+.registry-content a:hover {
+  text-decoration: underline;
+}
+
+.registry-content a:active {
+  text-decoration: underline;
+}
+
 .registry-side-container {
   grid-column-start: 2;
   grid-column-end: 3;
