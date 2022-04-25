@@ -122,6 +122,7 @@
     .rsvp select {
         height: 50px;
         font-size: 1em;
+        -webkit-appearance: none;
     }
 
     .rsvp input {
