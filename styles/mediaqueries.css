@@ -198,29 +198,8 @@
 }
 
 /* Registry */
-/* @media (max-width: 1360px) {
-    .registry-main-container {
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto;
-        margin: 0 5% 0 5%;
-    }
-
-    .header-container {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .registry {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .footer-container {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
+@media (max-width: 1360px) {
     .registry-side-container img {
-        width: 100%;
+        display: none;
     }
-} */
+}
