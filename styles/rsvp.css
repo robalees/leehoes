@@ -118,6 +118,7 @@
   border-radius: 10px;
   border: 2px solid #e87364;
   height: 50px;
+  max-width: 350px;
 }
 
 ::placeholder {
@@ -141,6 +142,7 @@
   display: inline-block;
   color: #e87364;
   background-color: white;
+  max-width: 350px;
 }
 
 .rsvp .submit-button {
