@@ -58,6 +58,25 @@
   padding-top: 3em;
 }
 
+.rsvp a:link {
+  text-decoration: none;
+  color: #e87364;
+  text-decoration: underline;
+}
+
+.rsvp a:visited {
+  text-decoration: none;
+  color: #e87364;
+}
+
+.rsvp a:hover {
+  text-decoration: underline;
+}
+
+.rsvp a:active {
+  text-decoration: underline;
+}
+
 .rsvp ul {
   list-style: none;
   padding-left: 0;
