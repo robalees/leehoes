@@ -1,0 +1,106 @@
+/* Containers and content */
+
+.todo-main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr 200px;
+    margin: 0 5% 0 5%;
+}
+
+.todo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    min-width: 0;
+    padding: 2em;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #e87364;
+}
+
+.todo .description {
+    padding: 0 0 1em 0;
+}
+
+.todo .description h1 {
+    margin: 0;
+}
+
+.todo .todo-header,
+h1 {
+    font-size: 2em;
+}
+
+.todo p {
+    font-size: 1.25em;
+    margin: 1em 0 1em 0;
+}
+
+.todo h1 {
+    font-size: 1.25em;
+}
+
+.todo .todo-section h1 {
+    font-size: 1.75em;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.todo .todo-section .city {
+    padding-bottom: 2em;
+}
+
+.todo ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+.todo li {
+    list-style-type: none;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 1em 2em 1em 0;
+}
+
+.todo .city h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.todo .city ul {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.todo .todo-name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.todo .todo-description {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.todo a:link {
+    text-decoration: none;
+    color: #e87364;
+    text-decoration: underline;
+}
+
+.todo a:visited {
+    text-decoration: none;
+    color: #e87364;
+}
+
+.todo a:hover {
+    text-decoration: underline;
+}
+
+.todo a:active {
+    text-decoration: underline;
+}

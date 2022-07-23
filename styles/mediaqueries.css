@@ -27,6 +27,12 @@
         margin: 0 5% 0 5%;
     }
 
+    .todo-main-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        margin: 0 5% 0 5%;
+    }
+
     .schedule-main-container {
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto;
@@ -101,6 +107,11 @@
 
     .hotels .city ul {
         grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .todo .city ul {
+        grid-template-columns: 1fr;
         column-gap: 10px;
     }
 
