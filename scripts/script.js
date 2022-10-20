@@ -13,7 +13,7 @@ const x = setInterval(function () {
   let now = new Date().getTime();
   const difference = end - now;
 
-  if (difference < 0) {
+  if (difference > 0) {
     clearInterval(x);
     document.getElementById("done").innerHTML = "We're married! 🎉";
     return;
