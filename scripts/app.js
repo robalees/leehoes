@@ -24,10 +24,13 @@ function generateMasonryGrid(columns, posts) {
         columnPosts.forEach(post => {
             let postDiv = document.createElement('div');
             postDiv.classList.add('post');
+            let imageLink = document.createElement("a");
+            imageLink.setAttribute("href", post.image);
             let image = document.createElement('img');
             image.src = post.image;
 
-            postDiv.append(image);
+            imageLink.appendChild(image);
+            postDiv.append(imageLink);
             column.appendChild(postDiv);
         })
     container.appendChild(column)
