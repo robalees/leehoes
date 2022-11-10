@@ -26,13 +26,8 @@ function generateMasonryGrid(columns, posts) {
             postDiv.classList.add('post');
             let image = document.createElement('img');
             image.src = post.image;
-            let overlay = document.createElement('div');
-            overlay.classList.add('overlay');
-            let title = document.createElement('h3');
-            title.innerText = post.title;
 
-            overlay.appendChild(title);
-            postDiv.append(image, overlay);
+            postDiv.append(image);
             column.appendChild(postDiv);
         })
     container.appendChild(column)
