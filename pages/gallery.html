@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Leehoes</title>
+    <link rel="stylesheet" href="/styles/style.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="/styles/gallery.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="/styles/mediaqueries.css" type="text/css" charset="utf-8">
+    <script defer type="text/javascript" src="/scripts/script.js"></script>
+    <meta name="format-detection" content="date=no">
+</head>
+
+<body>
+    <section class="gallery-main-container">
+        <header class="header-container">
+            <div class="logo"><a href="/index.html"><img src="/images/logo.svg" alt="Logo SVG" /></a></div>
+            <section class="title">
+                <h1>The Leehoes</h1>
+            </section>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/gallery.html">Gallery</a></li>
+                    <li><a href="/pages/todo.html">Things to do</a></li>
+                    <li><a href="/pages/hotels.html">Hotels</a></li>
+                    <li><a href="/pages/schedule.html">Schedule</a></li>
+                    <li><a href="/pages/registry.html">Registry</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="gallery">
+            <div class="gallery-container"></div>
+        </main>
+        <footer class="footer-container">
+            <p id="done"></p>
+            <ul>
+                <li><span id="days" class="countdown">0</span> Days</li>
+                <li><span id="hours" class="countdown">0</span> Hours</li>
+                <li><span id="minutes" class="countdown">0</span> Minutes</li>
+                <li><span id="seconds" class="countdown">0</span> Seconds</li>
+            </ul>
+        </footer>
+    </section>
+
+    <script src="/scripts/items.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+
+</html>
