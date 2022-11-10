@@ -6,8 +6,8 @@ var myConfetti = confetti.create(myCanvas, {
   useWorker: true
 });
 myConfetti({
-  particleCount: 100,
-  spread: 100
+  particleCount: 150,
+  spread: 160
   // any other options from the global
   // confetti function
 });
