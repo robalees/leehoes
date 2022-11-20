@@ -96,3 +96,7 @@
 .content-container li {
   padding-bottom: 1em;
 }
+
+.content-container .text-container {
+  margin-right: 1.5em;
+}
